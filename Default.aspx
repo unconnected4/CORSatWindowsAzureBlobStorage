@@ -16,7 +16,7 @@
             blockSize, numberOfBlocks, reader, streamPointer, submitUri, blockIds, bytesRemain, bytesUploaded;
 
         $(document).ready(function () {
-            if (!(window.File || window.FileReader || window.FileList || window.Blob)){
+            if (!(window.File && window.FileReader && window.FileList && window.Blob)){
                 $('body').html('<h1>Обновите брузер. В этом ничего работать не будет</h1>');
                 return;
             }
